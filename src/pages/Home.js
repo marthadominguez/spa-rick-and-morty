@@ -4,15 +4,16 @@ const Home = async () => {
     const characters = await getData()
     const view = `
         <div class="characters">
-        ${characters.results.map((character)=>`
+        ${characters.results.map( (character)=> `
         <article class="character-item">
             <a href="#/${character.id}/">
                 <img src="${character.image}" alt="${character.name}"/>
                 <h2>${character.name}</h2>
             </a>
-            </article>`)}
+            </article>`).join("")}
         </div>
     `
+    console.log(characters.results)
     return view
 }
 
