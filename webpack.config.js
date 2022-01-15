@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // necesario para trabajar con HTML
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -30,7 +31,11 @@ module.exports = {
                 template: './public/index.html',  //Dirección donde se encuentra el template principal
                 filename: './index.html' //El nombre que tendrá el archivo
             }
-        )
+        ),
+        new CopyWebpackPlugin({
+            patterns: [{ from: './src/styles/styles.css',
+            to: '' }],
+      })
     ]
 }
 
