@@ -12,11 +12,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px 0; 
 }
 
-.header a {
-  text-decoration: none;
-  color: #15302C;
+.header-logo img {
+  width: 40%;
 }
 
 .main {
@@ -138,4 +138,30 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+footer {
+    padding: 15px;
+}
+
+footer, footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+footer p {
+    display: inline;
+    margin: 0 5px;
+    color: rgb(148, 148, 148);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+footer .span-icons {
+    margin: 0 5px;
+    height: 20px;
+    width: 20px;
+    color: rgb(148, 148, 148);
 }
