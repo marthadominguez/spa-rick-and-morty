@@ -1,5 +1,5 @@
 // import templates y paginas que hemos creado
-import Header from '../templates/header';
+import Header from '../templates/Header';
 import Footer from '../templates/Footer';
 import Home from '../pages/Home';
 import Character from '../pages/Character';
