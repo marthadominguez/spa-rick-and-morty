@@ -14,7 +14,6 @@ const Home = async () => {
             </article>`).join("")}
         </div>
     `
-    console.log(characters.results)
     return view
 }
 
