@@ -3,7 +3,7 @@ const Header = () => {
         <div class="header-main">
         <div class="header-logo">
             <a href="/">
-            <img src="https://i.ibb.co/2MSK4hV/58f37720a4fa116215a9240f.png" alt="logo de Rick and Morty" title="Home" border="0">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1280px-Rick_and_Morty.svg.png" alt="logo de Rick and Morty" title="Home" border="0">
             </a>
         </div>
   `;
