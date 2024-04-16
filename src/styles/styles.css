@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #324349;
   color: #3c484e;
   font-family: "Public Sans", sans-serif;
 }
@@ -33,11 +33,11 @@ body {
 
 .characters {
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  grid-row-gap: 1.5em;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 1rem;
   display: grid;
   padding-bottom: 50px;
-  border-bottom: solid 2px #4e4e4e15;
+  border-bottom: solid 2px #00e1ff1a;
 }
 
 .characters-inner {
@@ -47,6 +47,7 @@ body {
 }
 
 .characters-card {
+  background-color: rgb(11, 114, 132);
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.08),
     1px 3px 8px rgba(39, 44, 49, 0.03);
@@ -57,6 +58,10 @@ body {
   animation-name: fade;
 }
 
+.characters-card.info {
+  padding: 20px 0;
+}
+
 .characters-card img {
   width: 100%;
   height: auto;
@@ -64,23 +69,27 @@ body {
 }
 
 .characters-card h2 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   text-align: center;
-  color: #026c86;
+  line-height: 100%;
+  margin: 28px 0;
+  color: rgb(189, 247, 73);
 }
 
 .characters-card h3 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   margin: 20px;
   padding-left: 15px;
+  color: whitesmoke;
 }
 
 .character-item {
+  background-color: rgb(11, 114, 132);
   text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+  box-shadow: 8px 14px 38px rgba(1, 23, 27, 0.201),
     1px 3px 8px rgba(39, 44, 49, 0.03);
   border-radius: 20px;
   margin: 0 0 20px 0;
@@ -110,21 +119,21 @@ body {
 }
 
 .character-item h2 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
   padding: 10px 0 3px 15px;
 }
 
 .character-item h3 {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
   margin: 0;
   padding: 0 0 17px 15px;
 }
 
 .character-item a {
   text-decoration: none;
-  color: #026c86;
+  color: hsl(0, 0%, 100%);
 }
 
 @keyframes fade {
@@ -152,8 +161,8 @@ footer p {
   margin: 0 5px;
   color: rgb(148, 148, 148);
   font-size: 16px;
-  font-weight: 500;
-  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-family: "lato", sans-serif;
 }
 
 footer .span-icons {
